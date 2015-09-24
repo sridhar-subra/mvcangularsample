@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Framework
 {
+    /// <summary>
+    /// test1
+    /// </summary>
     public class Statistics
     {
         public string Label { get; set; }
