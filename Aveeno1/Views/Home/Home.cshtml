@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    @Scripts.Render("~/bundles/thirdpartyscripts")
+    @Scripts.Render("~/bundles/appscripts")
+    @Styles.Render("~/bundle/css")   
+    <title>Hospital System</title>
+</head>
+<body ng-app="PatientApp">
+
+    <div class="container-fluid" id="wrapper">
+        <div class="col-sm-4 " id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand"><a href="#/Default">Hospital System</a></li>
+                <li><a href="#/GetAllPatients">Patients</a></li>
+                <li><a href="#/NewpAtient/">New Patient</a></li>
+                <li><a href="#/Chart/">Chart</a></li>
+                <li><a href="#/log/">Logs</a></li>
+                <li><a href="#/help/">API docs</a></li>
+                <li><a href="#/mvcerror">UI Layer Error</a></li>
+                <li><a href="#/webapierror">Web API Error</a></li>
+            </ul>
+        </div>
+         <div class="container-fluid">
+             <div class="row" style="background-color:#000000">&nbsp;</div>
+                 <br />
+                 <div class="row">
+                     <div ng-view class="col-sm-8">
+                         <!-- View inserted dynamically through angular-->
+                     </div>
+                 </div>
+            
+         </div>
+    </div>
+</body>
+
+</html>

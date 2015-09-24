@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title> angular unit test</title>      
+    <script type="text/javascript" src="../../Scripts/angular.min.js"></script> 
+    <script src="2.calculator.js"></script>
+</head>
+<body ng-app="calculatorApp">
+    <!-- This div element corresponds to the  CalculatorController we created via the JavaScript-->
+    <div ng-controller="CalculatorController">
+        <input ng-model="x" type="number">
+        <input ng-model="y" type="number">
+        <input type="button" ng-click="sum()" value="+">
+        <strong><input ng-model="z" type="number"></strong>
+        <!-- the value for ngClick maps to the sum function within the controller body -->
+    </div>    
+</body>
+</html>

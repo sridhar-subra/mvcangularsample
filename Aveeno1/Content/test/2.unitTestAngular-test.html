@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title> angular unit test</title>
+   
+    <link rel="stylesheet" type="text/css" href="frk/jasmine.min.css">
+    <script src="frk/jasmine.min.js"></script>
+    <script type="text/javascript" src="frk/jasmine-html.min.js"></script>
+    <script type="text/javascript" src="frk/boot.min.js"></script>
+    <script type="text/javascript" src="../../Scripts/angular.min.js"></script>
+    <script type="text/javascript" src="../../Scripts/angular-mocks.js"></script>
+    <script src="2.calculator.js"></script>
+    <script src="2.calculator-test.js"></script>
+</head>
+<body ng-app="calculatorApp">
+    <script type="text/javascript">        
+    angular.element(document).ready(function () {
+        angular.bootstrap(document, ['calculatorApp']);
+    });           
+    </script>
+</body>
+</html>

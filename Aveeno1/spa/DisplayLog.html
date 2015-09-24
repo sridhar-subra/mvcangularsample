@@ -1,0 +1,38 @@
+﻿<legend>Logs from database..</legend>
+<div ng-controller="PatientController" ng-init="getAllLogs()">
+    <div ng-show="statusMessage">{{statusMessage}} </div>
+    <div class="col-sm-6">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Event Date</th>
+                    <th>Event Level</th>
+                    <th>Event Message</th>
+                    <th>Error Message</th>
+                  
+
+                </tr>
+            </thead>
+            <tr ng-repeat="item in logs">
+                <td>
+                    {{item.id}}
+                </td>
+                <td>
+                    {{item.eventDateTime|date:'medium'}}
+                </td>
+                <td>
+                    {{item.eventLevel}}
+                </td>
+                <td>
+                    {{item.eventMessage}}
+                </td>
+                <td>
+                    {{item.errorMessage}}
+                </td>
+ 
+            </tr>
+        </table>
+    </div>
+</div>
+<div class="col-sm-4">&nbsp;</div>
